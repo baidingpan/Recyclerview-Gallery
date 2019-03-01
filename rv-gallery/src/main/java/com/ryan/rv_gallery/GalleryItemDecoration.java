@@ -1,13 +1,14 @@
 package com.ryan.rv_gallery;
 
 import android.graphics.Rect;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.ryan.rv_gallery.util.DLog;
 import com.ryan.rv_gallery.util.OsUtil;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author RyanLee

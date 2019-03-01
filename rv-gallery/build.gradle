@@ -3,14 +3,14 @@ apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
 
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -29,16 +29,18 @@ android {
 
 dependencies {
     implementation 'com.ryan.base-lib:base-lib:0.0.5'
+    implementation 'androidx.appcompat:appcompat:1.0.0-rc01'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-rc01'
 }
 
 //important
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-version = "1.1.2"//发布的library的版本号,这个比较关键！！！
+version = "1.1.3"//发布的library的版本号,这个比较关键！！！
 
-def siteUrl = 'https://github.com/ryanlijianchang/Recyclerview-Gallery'      // 项目的主页(可随意，建议填library的github地址)
-def gitUrl = 'https://github.com/ryanlijianchang/Recyclerview-Gallery'      // Git仓库的url(可随意，建议填library的github地址)
+def siteUrl = 'https://github.com/baidingpan/Recyclerview-Gallery.git'      // 项目的主页(可随意，建议填library的github地址)
+def gitUrl = 'https://github.com/baidingpan/Recyclerview-Gallery.git'      // Git仓库的url(可随意，建议填library的github地址)
 group = "com.ryan.rv_gallery"    // 这里是groupId ,必须填写(建议填唯一的包名)
 
 bintray {
@@ -75,9 +77,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'ryanlijianchang'        //开发者的基本信息(建议填自己名称)
-                        name 'RyanLee'    //开发者基本信息(建议填自己名称)
-                        email 'liji.anchang@163.com'   //开发者基本信息(建议填自己名称)
+                        id 'qingjunpan'        //开发者的基本信息(建议填自己名称)
+                        name 'baidingpan'    //开发者基本信息(建议填自己名称)
+                        email 'panqj3@sina.com'   //开发者基本信息(建议填自己名称)
                     }
                 }
                 scm {

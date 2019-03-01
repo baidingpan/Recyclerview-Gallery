@@ -1,17 +1,19 @@
 package ryane.com.gallery;
 
 import android.content.Context;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+//import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.ryan.rv_gallery.util.DLog;
 
 import java.util.List;
 import java.util.Random;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author RyanLee

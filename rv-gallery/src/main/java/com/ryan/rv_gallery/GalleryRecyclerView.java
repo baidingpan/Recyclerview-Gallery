@@ -3,18 +3,25 @@ package com.ryan.rv_gallery;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.os.Parcelable;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntRange;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+//import android.support.annotation.FloatRange;
+//import android.support.annotation.IntRange;
+//import android.support.annotation.Nullable;
+//import android.support.v7.widget.GridLayoutManager;
+//import android.support.v7.widget.LinearLayoutManager;
+//import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.ryan.baselib.util.ThreadUtils;
 import com.ryan.rv_gallery.util.DLog;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntRange;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author RyanLee
